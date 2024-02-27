@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block ;
+    list-style-type: none;
+}
+nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(116, 0, 0);
+}
+h1{
+    color: rgb(73, 73, 73);
+    padding: 20px;
+}
+p{
+    color: rgb(116, 0, 0);
+    padding: 20px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 15px 0;   
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.col-2 p{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    display: inline-block;
+    background-color: rgb(116, 0, 0);
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin: 40px;  
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: orangered;
+}
+.header .row{
+margin-top: 40px;
+}
+.categaries {
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30px;
+    min-width: 250px;
+    margin-bottom: 30px;
+    transition: trnasfrom 1s  ;
+}
+.col-3 :hover{
+    transform: translateY(-5px);
+}
+.col-3 img{
+    border-radius: 30px;
+}
+.categaries h2{
+    text-align: center;
+    margin-bottom: 70px;
+text-decoration: none;
+color: rgb(73, 73, 73);
+font-family: Arial, Helvetica, sans-serif;
+}
+.categaries p{
+    text-align: center;
+    color: rgb(116, 0, 0);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.offer{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    background: radial-gradient(whitesmoke,rgb(116,0,0));
+}
+.offer h4{
+    color: rgb(116, 0, 0);
+}
+.offer img{
+    margin-right: 50px;
+    border-radius: 30px;
+}
+.footer {
+    padding: 50px;
+    margin: 30px;
+    text-align: left  
+}
+.footer ul{
+    font-family: Arial, Helvetica, sans-serif;
+color: rgb(73, 73, 73);
+list-style-type: none;
+}
+.footer-col-1 ul{
+    margin: 30px;
+}
+.footer-col-2 ul{
+    margin: 30px;
+}
+.footer-col-3 ul{
+    margin: 30px;
+}
+.desgin{
+    background-color: rgb(116, 0, 0);
+    text-align: center;
+    flex: none;
+}
+.desgin small{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .recipe{
+    margin: 30px;
+    padding: 50px;
+  
+} */
+.recipe-col-1{
+     margin: 30px;
+     padding: 30px;
+}
+.recipe h2{
+    text-align: center;
+    margin-bottom: 70px;
+text-decoration: none;
+color: rgb(73, 73, 73);
+font-family: Arial, Helvetica, sans-serif;
+}
+.recipe h4{
+    color: rgb(73, 73, 73);
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 20px;
+}
+.recipe p{
+     color: rgb(116, 0, 0);
+     
+}
+.recipe-col-1 img{
+    border-radius: 30px;
+}
+.form{
+    margin: 50px;
+}
+.form h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+.form-col-2{
+    padding: 50px;
+}
+
+
+.menu-icon{
+    width: 28px;
+    margin-bottom: 5px;
+    display: none;
+}
+/* media quary for mennu */
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 130px;
+        left: 0px;
+        background: rgb(116, 0, 0);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: whitesmoke;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* media quary for 600px screen size */
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3{
+        flex-basis: 100%;
+    }
+}

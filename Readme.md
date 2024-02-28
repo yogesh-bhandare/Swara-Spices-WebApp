@@ -1,6 +1,6 @@
 # Swara Spices Website 🌶
 
-![Swara Spices Website](image_url_here)
+![Swara Spices Website](swara-spices.png)
 
 🎉 Welcome to the Swara Spices website! This project represents my initial foray into the world of frontend programming, where I've leveraged HTML and CSS to craft a user-friendly interface. I'm excited to showcase my progress and share this project as a testament to my journey in mastering frontend development. 💡🖥 
 
